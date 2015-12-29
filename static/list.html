@@ -1,5 +1,22 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <body>
-STATIC FILE
+
+<div ng-app="playerApp">
+
+	<h1>Playable files:</h1>
+
+	<div ng-controller="playerController">
+		Status {{player_status}}
+		<ul>
+			<li ng-repeat="item in filenames track by $index"><a href="../play?f={{$index}}">{{$index}} - {{item}}</a></li>
+		</ul>
+	</div>
+</div>
+
+<script src="playerApp.js"></script>
+<script src="playerController.js"></script>
+
 </body>
 </html>
