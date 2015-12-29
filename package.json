@@ -1,0 +1,16 @@
+{
+  "name": "simpleplayer",
+  "version": "1.0.0",
+  "description": "Web-based controller for playing QT videos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christopher Arquiza",
+  "license": "MIT",
+  "dependencies": {
+    "applescript": "^1.0.0",
+    "express": "^4.13.3",
+    "walk": "^2.3.9"
+  }
+}
